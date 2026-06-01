@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鄭雅蓁 Fion Cheng - 個人數位名片</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts 提升字體質感 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Noto Serif TC', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#FAF6F0',
+                            200: '#F3EAE0',
+                            300: '#E6D5C3',
+                        },
+                        gold: {
+                            500: '#C5A880',
+                            600: '#B0926A',
+                            700: '#8E714B',
+                        },
+                        charcoal: '#2C2A29',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+            background-color: #FAF6F0; /* 米白底色 */
+            color: #2C2A29;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="selection:bg-gold-300 selection:text-charcoal">
+
+    <!-- 主容器 -->
+    <div class="max-w-md mx-auto min-h-screen flex flex-col justify-between px-6 py-10 md:max-w-xl">
+        
+        <!-- 頂部與個人資訊 -->
+        <header class="space-y-8 animate-fade-in">
+            <!-- 美學裝飾線 -->
+            <div class="flex items-center space-x-2">
+                <span class="h-[1px] w-8 bg-gold-500"></span>
+                <span class="text-xs uppercase tracking-widest text-gold-600 font-medium">Aesthetic & Event Specialist</span>
+            </div>
+
+            <!-- 頭像與基本資料 -->
+            <div class="flex items-center space-x-6">
+                <!-- 
+                  頭像區：
+                  您只需將 src 的網址替換成您的實際照片連結（或將照片命名為 avatar.jpg 並放在同一個資料夾，然後修改 src="avatar.jpg"）
+                -->
+                <div class="relative w-24 h-24 rounded-full overflow-hidden bg-cream-300 border border-gold-500/20 shadow-sm flex-shrink-0">
+                    <!-- 預設精美插圖/佔位符 -->
+                    <svg class="w-full h-full text-gold-600/30 p-2" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                    <!-- 如果有實體相片，請解開下方註解並填入網址： -->
+                    <!-- <img src="你的照片網址" alt="鄭雅蓁" class="w-full h-full object-cover"> -->
+                </div>
+                
+                <div class="space-y-1">
+                    <h1 class="text-3xl font-bold font-serif tracking-wide text-charcoal">鄭雅蓁</h1>
+                    <p class="text-sm text-gold-600 font-medium">Fion Cheng</p>
+                    <p class="text-xs text-gray-500 mt-1">台南家專 服裝設計科 畢業</p>
+                </div>
+            </div>
+
+            <!-- 一句話自我定位 -->
+            <div class="bg-cream-50 border border-cream-300/40 rounded-2xl p-5 shadow-sm">
+                <p class="text-base font-serif italic text-charcoal/95 leading-relaxed">
+                    「以時尚美學為筆，在流暢的節奏中，為您雕琢每一場完美的盛宴。」
+                </p>
+            </div>
+        </header>
+
+        <!-- 關於我 Section -->
+        <section class="mt-10 space-y-4">
+            <h2 class="text-lg font-serif font-bold text-charcoal flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-600"></span>
+                <span>關於我</span>
+            </h2>
+            <div class="text-sm text-gray-600 leading-relaxed space-y-3">
+                <p>
+                    我畢業於服裝設計科，天生對美的事物懷有無比熱忱。踏入社會後，我將這份美學底蘊帶入婚紗與高規格宴會產業，並在世貿聯誼社與維多麗亞酒店深耕多年。
+                </p>
+                <p>
+                    我極具親和力、喜愛與人互動。對於婚禮婚宴、大型會議及講座的統籌與流程控管駕輕就熟。在瞬息萬變的宴會現場，我擅長在溝通與細節中尋求完美，致力為每一位賓客留下無懈可擊的回憶。
+                </p>
+            </div>
+        </section>
+
+        <!-- 3項技能 Section -->
+        <section class="mt-10 space-y-4">
+            <h2 class="text-lg font-serif font-bold text-charcoal flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-600"></span>
+                <span>核心專業</span>
+            </h2>
+            
+            <div class="space-y-3">
+                <!-- 技能 1 -->
+                <div class="bg-cream-50 p-4 rounded-xl border border-cream-200/50 flex items-start space-x-3">
+                    <div class="p-1.5 bg-gold-500/10 rounded-lg text-gold-600 mt-0.5">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-charcoal">宴會與大型會議規劃</h3>
+                        <p class="text-xs text-gray-500 mt-0.5">熟悉喜宴婚禮流、大型講座與商務會議全程控管，確保活動零缺失落地執行。</p>
+                    </div>
+                </div>
+
+                <!-- 技能 2 -->
+                <div class="bg-cream-50 p-4 rounded-xl border border-cream-200/50 flex items-start space-x-3">
+                    <div class="p-1.5 bg-gold-500/10 rounded-lg text-gold-600 mt-0.5">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.97 5.97 0 00-.75-2.906m-.179-1.973a4.859 4.859 0 00-.085-.667m0 0a3.375 3.375 0 10-4.693-4.693m0 8.022a9.007 9.007 0 01-11.5-.194m0 0a3.375 3.375 0 011.007-4.757m1.516-1.97a3.375 3.375 0 004.493 4.493m0 0a5.971 5.971 0 01-.75 2.906m-.75-2.906A3.061 3.061 0 017.5 15.75H6a3.001 3.001 0 00-3 3m11.108-4.5a9.045 9.045 0 000-6.3h-1.11a9.045 9.045 0 000 6.3h1.11z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-charcoal">高效溝通與客情管理</h3>
+                        <p class="text-xs text-gray-500 mt-0.5">出色的協調技巧，能精準對接高階商務與私人客製化需求，並落實跨部門協同合作。</p>
+                    </div>
+                </div>
+
+                <!-- 技能 3 -->
+                <div class="bg-cream-50 p-4 rounded-xl border border-cream-200/50 flex items-start space-x-3">
+                    <div class="p-1.5 bg-gold-500/10 rounded-lg text-gold-600 mt-0.5">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122l9.37-9.37m0 0l-1.06-1.061m1.06 1.061L18.47 7.184m-9.42 9.42a4.5 4.5 0 11-6.364-6.364l9.37-9.37h.003L12 1.5M16.5 12h-.008v.008H16.5V12z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-charcoal">空間氛圍與美學顧問</h3>
+                        <p class="text-xs text-gray-500 mt-0.5">融合服裝設計對色彩、質感的敏銳度，能為宴會與婚禮提供美學建議與空間設計靈感。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3個作品占位區 Section -->
+        <section class="mt-10 space-y-4">
+            <h2 class="text-lg font-serif font-bold text-charcoal flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-600"></span>
+                <span>精選經歷與專案</span>
+            </h2>
+
+            <div class="grid grid-cols-1 gap-4">
+                <!-- 專案 1 -->
+                <div class="group bg-cream-50/50 border border-cream-200/40 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[16/9] bg-cream-200 flex items-center justify-center relative overflow-hidden">
+                        <!-- 預留背景插圖 -->
+                        <div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="relative z-10 text-center px-4">
+                            <span class="text-[10px] tracking-widest uppercase text-gold-700 bg-white/80 px-2 py-0.5 rounded backdrop-blur-sm font-semibold">Conference & Banquet</span>
+                        </div>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <p class="text-xs text-gold-600 font-medium">世貿聯誼社 | 會議專員</p>
+                        <h3 class="text-sm font-bold text-charcoal">高階商務會議與會員活動設計</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed pt-1">
+                            負責高規格企業年會、國際會議之空間動線規劃，與頂級會員專屬活動的細緻安排，累積豐富的頂級商務接待經驗。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 專案 2 -->
+                <div class="group bg-cream-50/50 border border-cream-200/40 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[16/9] bg-cream-200 flex items-center justify-center relative overflow-hidden">
+                        <!-- 預留背景插圖 -->
+                        <div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="relative z-10 text-center px-4">
+                            <span class="text-[10px] tracking-widest uppercase text-gold-700 bg-white/80 px-2 py-0.5 rounded backdrop-blur-sm font-semibold">Luxury Wedding</span>
+                        </div>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <p class="text-xs text-gold-600 font-medium">維多麗亞酒店 | 宴會廳副理</p>
+                        <h3 class="text-sm font-bold text-charcoal">奢華婚宴統籌與跨部門流程管理</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed pt-1">
+                            擔任客戶婚禮流程的首席顧問，控管百桌規模大型宴會的軟硬體細節，卓越地調配內外場團隊，確保完美零失誤演出。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 專案 3 -->
+                <div class="group bg-cream-50/50 border border-cream-200/40 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[16/9] bg-cream-200 flex items-center justify-center relative overflow-hidden">
+                        <!-- 預留背景插圖 -->
+                        <div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="relative z-10 text-center px-4">
+                            <span class="text-[10px] tracking-widest uppercase text-gold-700 bg-white/80 px-2 py-0.5 rounded backdrop-blur-sm font-semibold">Bridal Aesthetic</span>
+                        </div>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <p class="text-xs text-gold-600 font-medium">婚紗美學 | 跨界合作專案</p>
+                        <h3 class="text-sm font-bold text-charcoal">服裝美學與精緻宴席氛圍整合</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed pt-1">
+                            融合服裝設計科系出身之專業素養，為新人及活動主辦方提供從婚紗款式搭配到宴會會場色彩學的深度諮詢，打造一體化的精緻視覺感受。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡方式 Section -->
+        <footer class="mt-12 pt-8 border-t border-cream-300/50 space-y-6">
+            <div class="space-y-4">
+                <h2 class="text-lg font-serif font-bold text-charcoal flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold-600"></span>
+                    <span>聯絡資訊</span>
+                </h2>
+
+                <div class="space-y-3">
+                    <!-- 電話 -->
+                    <a href="tel:0920008198" class="flex items-center space-x-3 p-3 bg-white/60 rounded-xl hover:bg-white border border-cream-200/30 transition-all duration-200">
+                        <div class="text-gold-600">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a12.017 12.017 0 01-4.5-4.5c-.155-.44.01-1.275.387-1.564l1.293-.97a1.125 1.125 0 00.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700 font-medium">0920-008-198</span>
+                    </a>
+
+                    <!-- 信箱與點擊複製功能 -->
+                    <div id="email-button" onclick="copyEmail()" class="flex items-center justify-between p-3 bg-white/60 rounded-xl hover:bg-white border border-cream-200/30 transition-all duration-200 cursor-pointer group">
+                        <div class="flex items-center space-x-3">
+                            <div class="text-gold-600">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                            </div>
+                            <span id="email-text" class="text-sm text-gray-700 font-medium">fioncheng889@gmail.com</span>
+                        </div>
+                        <span id="copy-badge" class="text-[10px] text-gold-600 bg-gold-500/10 px-2 py-0.5 rounded font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+                            點擊複製
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 版權與設計宣告 -->
+            <div class="text-center pt-4">
+                <p class="text-[10px] text-gray-400 tracking-wider">© 2026 鄭雅蓁 Fion Cheng. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 簡易的一鍵複製功能與提示元件 -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-charcoal text-cream-50 text-xs px-4 py-2.5 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 transform translate-y-2">
+        Email 複製成功！
+    </div>
+
+    <script>
+        function copyEmail() {
+            // 透過傳統相容方式複製，以應對 iframe 環境下的限制
+            const emailText = document.getElementById('email-text').innerText;
+            const tempInput = document.createElement('input');
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // 觸發 Toast 提示
+            const toast = document.getElementById('toast');
+            const badge = document.getElementById('copy-badge');
+            
+            badge.innerText = '已複製！';
+            badge.classList.remove('bg-gold-500/10', 'text-gold-600');
+            badge.classList.add('bg-emerald-500/10', 'text-emerald-600');
+
+            toast.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                
+                badge.innerText = '點擊複製';
+                badge.classList.add('bg-gold-500/10', 'text-gold-600');
+                badge.classList.remove('bg-emerald-500/10', 'text-emerald-600');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
